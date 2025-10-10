@@ -1,0 +1,968 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Salt'n Pepper Restaurants - Experience gracious dining with outstanding service and extraordinary cuisine across Pakistan." />
+    <meta name="theme-color" content="#000000" />
+    <title>Salt'n Pepper Restaurants</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest" />
+    <link rel="preload" href="./style/utility.css" as="style" />
+    <link rel="preload" href="./style/style.css" as="style" />
+    <link rel="stylesheet" href="./style/utility.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/smooth-scroll.css" />
+    <link rel="stylesheet" href="./style/animations.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="./style/animations.css" /></noscript>
+  </head>
+    <body>
+
+    <!-- Header -->
+    <header class="header">
+      <section class="container flex justify-content-between align-items-center">
+        <figure class="logo">
+          <img
+            class="main-logo"
+            src="./assets/images/logo.webp"
+            alt="Salt'n Pepper Logo"
+          />
+        </figure>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <i class="fa fa-bars"></i>
+        </button>
+        <nav class="nav flex align-items-center" aria-label="Main navigation">
+          <a href="#" class="nav-link text-none">Home</a>
+          <a href="#" class="nav-link text-none">About Us</a>
+          <a href="#" class="nav-link text-none">Publications</a>
+          <button class="franchise-btn">Get a Franchise</button>
+          <button class="order-btn flex align-items-center">
+            Order Online
+            <span
+              class="arrow-icon flex align-items-center justify-content-center"
+              aria-hidden="true"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></span>
+          </button>
+        </nav>
+      </section>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Hero Carousel -->
+      <section class="hero-section" aria-label="Hero banner">
+        <section
+          class="carousel"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Promotional banners"
+        >
+          <section class="carousel-inner">
+            <article
+              class="carousel-item active"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="1 of 2"
+            >
+              <img
+                class="hero-img desktop-banner"
+                src="./assets/images/upto50.webp"
+                alt="Up to 50% off promotion"
+              />
+            </article>
+            <article
+              class="carousel-item"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="2 of 2"
+            >
+              <img
+                class="hero-img desktop-banner"
+                src="./assets/images/freedelivery.webp"
+                alt="Free delivery promotion"
+              />
+            </article>
+          </section>
+          <section
+            class="carousel-dots"
+            role="tablist"
+            aria-label="Slide controls"
+          >
+            <button
+              class="dot active"
+              role="tab"
+              aria-label="Go to slide 1"
+              aria-selected="true"
+              data-slide="0"
+            ></button>
+            <button
+              class="dot"
+              role="tab"
+              aria-label="Go to slide 2"
+              aria-selected="false"
+              data-slide="1"
+            ></button>
+          </section>
+        </section>
+      </section>
+
+      <!-- Brands Section -->
+      <section class="brands-section" aria-labelledby="brands-heading">
+        <section class="container">
+          <h1 id="brands-heading" class="brands-title text-center">
+            Welcome to <span class="brand-name">Salt'n Pepper</span
+            ><br />Restaurants! Our Brands
+          </h1>
+          <p class="brands-subtitle text-center">
+            Please click our brands below for further information, reservations
+            or to order online!
+          </p>
+          <section class="brands-grid flex justify-content-center flex-wrap">
+            <article class="brand-card flex flex-column align-items-center">
+              <figure
+                class="brand-img-wrapper flex align-items-center justify-content-center"
+              >
+                <img
+                  class="brand-img"
+                  src="./assets/images/imgi_10_8a66dd76-03d2-4b71-8d03-cf045f0248a7.webp"
+                  alt="Salt'n Pepper Restaurant brand logo"
+                />
+              </figure>
+              <button
+                class="brand-btn"
+                aria-label="Order from Salt'n Pepper Restaurant"
+              >
+                Order Now
+              </button>
+            </article>
+            <article class="brand-card flex flex-column align-items-center">
+              <figure
+                class="brand-img-wrapper flex align-items-center justify-content-center"
+              >
+                <img
+                  class="brand-img"
+                  src="./assets/images/imgi_7_9d9cb355-ac8c-404e-a608-c28242343cd1.webp"
+                  alt="Salt'n Pepper Express brand logo"
+                />
+              </figure>
+              <button
+                class="brand-btn"
+                aria-label="Order from Salt'n Pepper Express"
+              >
+                Order Now
+              </button>
+            </article>
+            <article class="brand-card flex flex-column align-items-center">
+              <figure
+                class="brand-img-wrapper flex align-items-center justify-content-center"
+              >
+                <img
+                  class="brand-img"
+                  src="./assets/images/imgi_8_f9238d0e-7c34-4139-a081-c57b7713628e.webp"
+                  alt="Salt'n Pepper Village brand logo"
+                />
+              </figure>
+              <button
+                class="brand-btn"
+                aria-label="Reserve a table at Salt'n Pepper Village"
+              >
+                Reserve a Table
+              </button>
+            </article>
+            <article class="brand-card flex flex-column align-items-center">
+              <figure
+                class="brand-img-wrapper flex align-items-center justify-content-center"
+              >
+                <img
+                  class="brand-img"
+                  src="./assets/images/imgi_9_38f64422-c79a-4650-8df2-5668743154df.webp"
+                  alt="Mocktail brand logo"
+                />
+              </figure>
+              <button class="brand-btn" aria-label="Order from Mocktail">
+                Order Now
+              </button>
+            </article>
+          </section>
+        </section>
+      </section>
+
+      <!-- Restaurant Franchises -->
+      <section class="franchise-section" aria-labelledby="franchise-heading">
+        <figure class="snp-right-side-one" aria-hidden="true">
+          <img src="./assets/images/s.webp" alt="" />
+        </figure>
+        <section class="container">
+          <h2 id="franchise-heading" class="franchise-title text-center">
+            <span class="brand-name">Salt'n Pepper</span><br />Restaurant
+            Franchises
+          </h2>
+          <p class="franchise-subtitle text-center">
+            Each of our franchises are individually managed. For further
+            details, kindly contact them directly.
+          </p>
+          <article class="franchise-grid flex flex-wrap">
+            <section class="franchise-text flex flex-column justify-content-center">
+              <p class="franchise-location">Islamabad</p>
+              <h3 class="franchise-name">
+                <span class="brand-name">Salt'n Pepper</span> Restaurant
+              </h3>
+              <address class="franchise-address">
+                <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Plot#
+                55, Shabbir Plaza, Blue Area, F-6, Islamabad
+              </address>
+              <p class="franchise-phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:+92512604904">Ph: 051-2604904-6</a>
+              </p>
+              <a
+                href="#"
+                class="direction-btn flex align-items-center justify-content-center"
+                role="button"
+              >
+                Get Directions
+                <span
+                  class="arrow-icon flex align-items-center justify-content-center"
+                  aria-hidden="true"
+                  ><i class="fa fa-arrow-right"></i
+                ></span>
+              </a>
+            </section>
+            <figure class="franchise-img">
+              <img
+                src="./assets/images/imgi_12_7aba8915-02ed-46ee-bd96-1063abe072fa.webp"
+                alt="Salt'n Pepper Restaurant Islamabad exterior"
+              />
+            </figure>
+          </article>
+          <article class="franchise-grid flex flex-wrap">
+            <figure class="franchise-img">
+              <img
+                src="./assets/images/imgi_13_11771dbf-36a1-4684-a55e-18af61e0f77c.webp"
+                alt="Salt'n Pepper Restaurant Faisalabad exterior"
+              />
+            </figure>
+            <section class="franchise-text flex flex-column justify-content-center">
+              <p class="franchise-location">Faisalabad</p>
+              <h3 class="franchise-name">
+                <span class="brand-name">Salt'n Pepper</span> Restaurant
+              </h3>
+              <address class="franchise-address">
+                <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+                4-Kohinoor City, Faisalabad
+              </address>
+              <p class="franchise-phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:+92418711404">Ph: 041-8711404</a>
+              </p>
+              <a
+                href="#"
+                class="direction-btn flex align-items-center justify-content-center"
+                role="button"
+              >
+                Get Directions
+                <span
+                  class="arrow-icon flex align-items-center justify-content-center"
+                  aria-hidden="true"
+                  ><i class="fa fa-arrow-right"></i
+                ></span>
+              </a>
+            </section>
+          </article>
+          <article class="franchise-grid flex flex-wrap">
+            <section class="franchise-text flex flex-column justify-content-center">
+              <p class="franchise-location">Bahawalpur</p>
+              <h3 class="franchise-name">
+                <span class="brand-name">Salt'n Pepper</span> Restaurant
+              </h3>
+              <address class="franchise-address">
+                <i class="fa fa-map-marker-alt" aria-hidden="true"></i> D.C
+                Chowk, opposite Commissioner House, Bahawalpur
+              </address>
+              <p class="franchise-phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:+92622740271">Ph: 062-2740271-2</a>
+              </p>
+              <a
+                href="#"
+                class="direction-btn flex align-items-center justify-content-center"
+                role="button"
+              >
+                Get Directions
+                <span
+                  class="arrow-icon flex align-items-center justify-content-center"
+                  aria-hidden="true"
+                  ><i class="fa fa-arrow-right"></i
+                ></span>
+              </a>
+            </section>
+            <figure class="franchise-img">
+              <img
+                src="./assets/images/imgi_14_b2f78afe-11e4-4af5-8aef-cff9c2908614.webp"
+                alt="Salt'n Pepper Restaurant Bahawalpur exterior"
+              />
+            </figure>
+          </article>
+        </section>
+      </section>
+
+      <!-- Express Franchises -->
+      <section class="express-section" aria-labelledby="express-heading">
+        <figure class="snp-left-one-side" aria-hidden="true">
+          <img src="./assets/images/p.webp" alt="" />
+        </figure>
+        <figure class="snp-right-side-second" aria-hidden="true">
+          <img src="./assets/images/red.webp" alt="" />
+        </figure>
+        <section class="container">
+          <h2 id="express-heading" class="express-title text-center">
+            <span class="brand-name">Salt'n Pepper</span><br />Express
+            Franchises
+          </h2>
+          <section class="express-grid flex flex-wrap justify-content-center">
+            <article class="express-card">
+              <img
+                class="express-img"
+                src="./assets/images/imgi_17_0f3ddba0-18a0-450e-af77-188aeb795934.webp"
+                alt="Salt'n Pepper Express Sargodha location"
+              />
+              <p class="express-location">sargodha</p>
+              <h3 class="express-name">
+                <span class="brand-name">Salt'n Pepper</span> Express
+              </h3>
+              <address class="express-address">
+                <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Opposite
+                Sargodha Arts Council Babar Road
+              </address>
+              <p class="express-phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:+92483725500">Ph: 048-3725500</a>
+              </p>
+              <a
+                href="#"
+                class="direction-btn flex align-items-center justify-content-center"
+                role="button"
+              >
+                Get Directions
+                <span
+                  class="arrow-icon flex align-items-center justify-content-center"
+                  aria-hidden="true"
+                  ><i class="fa fa-arrow-right"></i
+                ></span>
+              </a>
+            </article>
+            <article class="express-card">
+              <img
+                class="express-img"
+                src="./assets/images/imgi_18_171bb884-f60a-4d94-a0b9-78204522564e.webp"
+                alt="Salt'n Pepper Express Jhelum location"
+              />
+              <p class="express-location">Jhelum</p>
+              <h3 class="express-name">
+                <span class="brand-name">Salt'n Pepper</span> Express
+              </h3>
+              <address class="express-address">
+                <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Opposite
+                Dancing Fountain Gallery 2 Citi Housing Jhelum,
+              </address>
+              <p class="express-phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:+923077675555">Ph: 0307-7675555</a>
+              </p>
+              <a
+                href="#"
+                class="direction-btn flex align-items-center justify-content-center"
+                role="button"
+              >
+                Get Directions
+                <span
+                  class="arrow-icon flex align-items-center justify-content-center"
+                  aria-hidden="true"
+                  ><i class="fa fa-arrow-right"></i
+                ></span>
+              </a>
+            </article>
+            <article class="express-card">
+              <img
+                class="express-img"
+                src="./assets/images/imgi_19_31b37f0c-5936-4232-a55e-8042c2656526.webp"
+                alt="Salt'n Pepper Express Faisal Town location"
+              />
+              <p class="express-location">Faisal Town</p>
+              <h3 class="express-name">
+                <span class="brand-name">Salt'n Pepper</span> Express
+              </h3>
+              <address class="express-address">
+                <i class="fa fa-map-marker-alt" aria-hidden="true"></i> 34-C
+                Abul Hassan Isfahani Rd, Faisal Town,Lahore
+              </address>
+              <p class="express-phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:+92421111006 78">Ph: 042-111-100-678</a>
+              </p>
+              <a
+                href="#"
+                class="direction-btn flex align-items-center justify-content-center"
+                role="button"
+              >
+                Get Directions
+                <span
+                  class="arrow-icon flex align-items-center justify-content-center"
+                  aria-hidden="true"
+                  ><i class="fa fa-arrow-right"></i
+                ></span>
+              </a>
+            </article>
+            <article class="express-card">
+              <img
+                class="express-img"
+                src="./assets/images/imgi_20_2b5877b5-ca49-4161-a30e-752ddce91595.webp"
+                alt="Salt'n Pepper Express DHA location"
+              />
+              <p class="express-location">DHA</p>
+              <h3 class="express-name">
+                <span class="brand-name">Salt'n Pepper</span> Express
+              </h3>
+              <address class="express-address">
+                <i class="fa fa-map-marker-alt" aria-hidden="true"></i> 93-Y
+                Phase III, DHA,Lahore
+              </address>
+              <p class="express-phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:+92421111006 78">Ph: 042-111-100-678</a>
+              </p>
+              <a
+                href="#"
+                class="direction-btn flex align-items-center justify-content-center"
+                role="button"
+              >
+                Get Directions
+                <span
+                  class="arrow-icon flex align-items-center justify-content-center"
+                  aria-hidden="true"
+                  ><i class="fa fa-arrow-right"></i
+                ></span>
+              </a>
+            </article>
+            <article class="express-card">
+              <img
+                class="express-img"
+                src="./assets/images/imgi_21_0cdc03af-9732-4d0c-9174-f4e66953b3c8.webp"
+                alt="Salt'n Pepper Express Bahria Town location"
+              />
+              <p class="express-location">Bahria Town</p>
+              <h3 class="express-name">
+                <span class="brand-name">Salt'n Pepper</span> Express
+              </h3>
+              <address class="express-address">
+                <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Arwa
+                Heights Building 19 Nishtar Block, Sector E, Bahria Town Lahore
+              </address>
+              <p class="express-phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:+92421111006 78">Ph: 042-111-100-678</a>
+              </p>
+              <a
+                href="#"
+                class="direction-btn flex align-items-center justify-content-center"
+                role="button"
+              >
+                Get Directions
+                <span
+                  class="arrow-icon flex align-items-center justify-content-center"
+                  aria-hidden="true"
+                  ><i class="fa fa-arrow-right"></i
+                ></span>
+              </a>
+            </article>
+            <article class="express-card">
+              <img
+                class="express-img"
+                src="./assets/images/imgi_22_a860f757-114b-4453-ba86-f7b24dc0f24e.webp"
+                alt="Salt'n Pepper Express Gujar Khan location"
+              />
+              <p class="express-location">Gujar Khan</p>
+              <h3 class="express-name">
+                <span class="brand-name">Salt'n Pepper</span> Express
+              </h3>
+              <address class="express-address">
+                <i class="fa fa-map-marker-alt" aria-hidden="true"></i> New
+                Metro City Gujar Khan
+              </address>
+              <p class="express-phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:+923211114965">Ph: 0321-1114965</a>
+              </p>
+              <a
+                href="#"
+                class="direction-btn flex align-items-center justify-content-center"
+                role="button"
+              >
+                Get Directions
+                <span
+                  class="arrow-icon flex align-items-center justify-content-center"
+                  aria-hidden="true"
+                  ><i class="fa fa-arrow-right"></i
+                ></span>
+              </a>
+            </article>
+            <article class="express-card">
+              <img
+                class="express-img"
+                src="./assets/images/imgi_23_6b8657b7-91ec-4e06-a06c-5cad0d70606d.webp"
+                alt="Salt'n Pepper Express Fortress Stadium location"
+              />
+              <p class="express-location">Lahore</p>
+              <h3 class="express-name">
+                <span class="brand-name">Salt'n Pepper</span> Express
+              </h3>
+              <address class="express-address">
+                <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Shop
+                no.5, Arcade Block, Fortress Stadium, Lahore
+              </address>
+              <p class="express-phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:+92423662 3100">Ph: 042-366-23-100</a>
+              </p>
+              <a
+                href="#"
+                class="direction-btn flex align-items-center justify-content-center"
+                role="button"
+              >
+                Get Directions
+                <span
+                  class="arrow-icon flex align-items-center justify-content-center"
+                  aria-hidden="true"
+                  ><i class="fa fa-arrow-right"></i
+                ></span>
+              </a>
+            </article>
+            <article class="express-card">
+              <img
+                class="express-img"
+                src="./assets/images/imgi_24_bbac9f4a-2970-4bc4-b8a1-541857d96e79.webp"
+                alt="Salt'n Pepper Express Gujrat location"
+              />
+              <p class="express-location">Gujrat</p>
+              <h3 class="express-name">
+                <span class="brand-name">Salt'n Pepper</span> Express
+              </h3>
+              <address class="express-address">
+                <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Service
+                Mor, Gujrat
+              </address>
+              <p class="express-phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:+923111124600">Ph: 0311-1124600</a>
+              </p>
+              <a
+                href="#"
+                class="direction-btn flex align-items-center justify-content-center"
+                role="button"
+              >
+                Get Directions
+                <span
+                  class="arrow-icon flex align-items-center justify-content-center"
+                  aria-hidden="true"
+                  ><i class="fa fa-arrow-right"></i
+                ></span>
+              </a>
+            </article>
+            <article class="express-card">
+              <img
+                class="express-img"
+                src="./assets/images/imgi_25_114fd251-9864-44bc-9f51-0eb05781303c.webp"
+                alt="Salt'n Pepper Express Sahiwal location"
+              />
+              <p class="express-location">Sahiwal</p>
+              <h3 class="express-name">
+                <span class="brand-name">Salt'n Pepper</span> Express
+              </h3>
+              <address class="express-address">
+                <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Opposite
+                Main Gate Police Line, Sahiwal
+              </address>
+              <p class="express-phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:+92404515485">Ph: 040-4515485</a>
+              </p>
+              <a
+                href="#"
+                class="direction-btn flex align-items-center justify-content-center"
+                role="button"
+              >
+                Get Directions
+                <span
+                  class="arrow-icon flex align-items-center justify-content-center"
+                  aria-hidden="true"
+                  ><i class="fa fa-arrow-right"></i
+                ></span>
+              </a>
+            </article>
+            <article class="express-card">
+              <img
+                class="express-img"
+                src="./assets/images/imgi_26_8a2939b7-83fc-4971-b40c-72ced9dfd6f0.webp"
+                alt="Salt'n Pepper Express Burewala location"
+              />
+              <p class="express-location">Burewala</p>
+              <h3 class="express-name">
+                <span class="brand-name">Salt'n Pepper</span> Express
+              </h3>
+              <address class="express-address">
+                <i class="fa fa-map-marker-alt" aria-hidden="true"></i> The
+                Empire Mall, Canal Road, Burewala
+              </address>
+              <p class="express-phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:+923184900832">Ph: 0318-4900832</a>
+              </p>
+              <a
+                href="#"
+                class="direction-btn flex align-items-center justify-content-center"
+                role="button"
+              >
+                Get Directions
+                <span
+                  class="arrow-icon flex align-items-center justify-content-center"
+                  aria-hidden="true"
+                  ><i class="fa fa-arrow-right"></i
+                ></span>
+              </a>
+            </article>
+          </section>
+        </section>
+      </section>
+
+      <!-- Village Franchise -->
+      <section class="village-section" aria-labelledby="village-heading">
+        <section class="container">
+          <h2 id="village-heading" class="village-title text-center">
+            <span class="brand-name">Salt'n Pepper</span><br />Village Franchise
+          </h2>
+          <article class="village-grid flex flex-wrap">
+            <figure class="village-img">
+              <img
+                src="./assets/images/imgi_27_0df39a08-2dca-4998-adda-4ca66b1132cb.webp"
+                alt="Salt'n Pepper Village Gujranwala exterior"
+              />
+            </figure>
+            <section class="village-text">
+              <p class="village-location">GUJRANWALA</p>
+              <h3 class="village-name">
+                <span class="brand-name">Salt'n Pepper</span> Village
+              </h3>
+              <address class="village-address">
+                <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Adjacent
+                to Rida Marquees /DHA Main Gate, GT Road Gujranwala Cantt
+              </address>
+              <p class="village-phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:+92553884500">Ph: 055-3884500</a> l ,
+                <a href="tel:+92553880400">055-3880400</a>
+              </p>
+              <a
+                href="#"
+                class="direction-btn-green flex align-items-center justify-content-center"
+                role="button"
+              >
+                Get Directions
+                <span
+                  class="arrow-icon-green flex align-items-center justify-content-center"
+                  aria-hidden="true"
+                  ><i class="fa fa-arrow-right"></i
+                ></span>
+              </a>
+            </section>
+          </article>
+        </section>
+      </section>
+
+      <!-- Express Opening Soon -->
+      <section
+        class="express-soon-section"
+        aria-labelledby="express-soon-heading"
+      >
+        <section class="container">
+          <h2 id="express-soon-heading" class="express-soon-title text-center">
+            <span class="brand-name">Salt'n Pepper</span><br />Express
+            Franchises
+          </h2>
+          <p class="text-center">(Opening Soon)</p>
+          <section class="express-soon-grid flex flex-wrap justify-content-center">
+            <article class="express-soon-card">
+              <img
+                class="express-soon-img"
+                src="./assets/images/location.webp"
+                alt="Location marker icon"
+              />
+              <p class="express-soon-location">Opening Soon</p>
+              <h3 class="express-soon-name">
+                <span class="brand-name">Salt'n Pepper</span> Express
+              </h3>
+              <p class="express-soon-text">Blue World City</p>
+              <p class="express-soon-city">Rawalpindi</p>
+            </article>
+            <article class="express-soon-card">
+              <img
+                class="express-soon-img"
+                src="./assets/images/location.webp"
+                alt="Location marker icon"
+              />
+              <p class="express-soon-location">Opening Soon</p>
+              <h3 class="express-soon-name">
+                <span class="brand-name">Salt'n Pepper</span> Express
+              </h3>
+              <p class="express-soon-text">Al-Jalil Garden</p>
+              <p class="express-soon-city">Sharqpur</p>
+            </article>
+            <article class="express-soon-card">
+              <img
+                class="express-soon-img"
+                src="./assets/images/location.webp"
+                alt="Location marker icon"
+              />
+              <p class="express-soon-location">Opening Soon</p>
+              <h3 class="express-soon-name">
+                <span class="brand-name">Salt'n Pepper</span> Express
+              </h3>
+              <p class="express-soon-text">Al-Jalil Garden</p>
+              <p class="express-soon-city">Sadhoke</p>
+            </article>
+            <article class="express-soon-card">
+              <img
+                class="express-soon-img"
+                src="./assets/images/location.webp"
+                alt="Location marker icon"
+              />
+              <p class="express-soon-location">Opening Soon</p>
+              <h3 class="express-soon-name">
+                <span class="brand-name">Salt'n Pepper</span> Express
+              </h3>
+              <p class="express-soon-text">Al-Jalil Garden</p>
+              <p class="express-soon-city">Sheikhupura</p>
+            </article>
+            <article class="express-soon-card">
+              <img
+                class="express-soon-img"
+                src="./assets/images/location.webp"
+                alt="Location marker icon"
+              />
+              <p class="express-soon-location">Opening Soon</p>
+              <h3 class="express-soon-name">
+                <span class="brand-name">Salt'n Pepper</span> Express
+              </h3>
+              <p class="express-soon-text">Okara</p>
+            </article>
+            <article class="express-soon-card">
+              <img
+                class="express-soon-img"
+                src="./assets/images/location.webp"
+                alt="Location marker icon"
+              />
+              <p class="express-soon-location">Opening Soon</p>
+              <h3 class="express-soon-name">
+                <span class="brand-name">Salt'n Pepper</span> Express
+              </h3>
+              <p class="express-soon-text">Kharian</p>
+            </article>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <!-- Footer Section Start -->
+    <footer class="footer">
+      <!-- Decorative Element -->
+      <figure class="footer-snp-layer" aria-hidden="true">
+        <img src="./assets/images/s.webp" alt="" />
+      </figure>
+
+      <section class="container">
+        <section class="footer-content">
+          <!-- Footer Column 1 - About -->
+          <section class="footer-col flex flex-column">
+            <figure>
+              <img
+                class="footer-logo"
+                src="./assets/images/logo.webp"
+                alt="Salt'n Pepper Restaurants logo"
+              />
+            </figure>
+            <p class="footer-text">
+              The Salt'n Pepper Restaurants are an example of gracious dinning,
+              outstanding service, extraordinary classic and contemporary
+              cuisine. The restaurants have become the ultimate dinning
+              destinations in Lahore. From family occasions to business dinner
+              and moments of the heart, this place is where unforgettable
+              memories are made.
+            </p>
+          </section>
+          <!-- Footer Column 2 - Site Links -->
+          <nav
+            class="footer-col flex flex-column"
+            aria-label="Footer navigation"
+          >
+            <h3 class="footer-heading">Site Links</h3>
+            <a href="#" class="footer-link">Home</a>
+            <a href="#" class="footer-link">About Us</a>
+            <a href="#" class="footer-link">Publications</a>
+            <a href="#" class="footer-link">Get a Franchise</a>
+            <a href="#" class="footer-link">Feedback</a>
+            <a href="#" class="footer-link">Contact us</a>
+          </nav>
+
+          <!-- Footer Column 3 - Contact Information -->
+          <section class="footer-col flex flex-column">
+            <h3 class="footer-heading">Contact Us</h3>
+            <p class="footer-info">Head office Address</p>
+            <address class="footer-text">
+              Foodconsults (Pvt) Ltd<br />23-Usman Block, New GardenTown,
+              Lahore, Pakistan
+            </address>
+            <p class="footer-info">Head office number</p>
+            <p class="footer-text">
+              <a href="tel:+92423585093 1">+92 42 358 509 31</a>
+            </p>
+            <p class="footer-text">
+              <a href="tel:+92423585093 0">+92 42 358 509 30</a>
+            </p>
+            <p class="footer-info">Email Address</p>
+            <p class="footer-text">
+              <a href="mailto:info@snpfood.com">info@snpfood.com</a>
+            </p>
+            <p class="footer-info">Free delivery number</p>
+            <p class="footer-text">
+              <a href="tel:+92421111006 78">+92 42 111 100 678</a>
+            </p>
+            <p class="footer-text">
+              <a href="tel:+92031114446 10">+92 03 111 444 610</a>
+            </p>
+          </section>
+          <section class="footer-col flex flex-column">
+            <h3 class="footer-heading">Follow Us</h3>
+            <nav class="social-links flex" aria-label="Social media links">
+              <a
+                href="#"
+                class="social-link flex align-items-center justify-content-center"
+                aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i
+              ></a>
+              <a
+                href="#"
+                class="social-link flex align-items-center justify-content-center"
+                aria-label="Instagram"
+                ><i class="fa-brands fa-instagram" aria-hidden="true"></i
+              ></a>
+              <a
+                href="#"
+                class="social-link flex align-items-center justify-content-center"
+                aria-label="Twitter"
+                ><i class="fa-brands fa-twitter" aria-hidden="true"></i
+              ></a>
+            </nav>
+            <section class="app-links flex flex-column">
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                ><img
+                  src="assets/images/app_store.webp"
+                  alt="Download on the App Store"
+              /></a>
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                ><img
+                  src="assets/images/play_store.webp"
+                  alt="Get it on Google Play"
+              /></a>
+            </section>
+          </section>
+        </section>
+        <!-- <section class="footer-bottom flex justify-content-between align-items-center">
+                <section class="copyright-left">© 2025 Snp Main</section>
+                <section class="copyright-right">Powered by <a href="https://tossdown.com" target="_blank">tossdown.com</a></section>
+            </section> -->
+      </section>
+    </footer>
+
+    <script
+      src="./assets/fonts/fontawesome/fontawesome.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script defer>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Mobile Menu
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const nav = document.querySelector('.nav');
+        if (mobileMenuToggle && nav) {
+          mobileMenuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('active');
+          }, { passive: true });
+        }
+
+        // Carousel
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = slides.length;
+
+        if (slides.length > 0) {
+          const showSlide = (n) => {
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides.forEach((slide, index) => {
+              slide.classList.toggle('active', index === currentSlide);
+            });
+            dots.forEach((dot, index) => {
+              const isActive = index === currentSlide;
+              dot.classList.toggle('active', isActive);
+              dot.setAttribute('aria-selected', isActive);
+            });
+          };
+
+          dots.forEach((dot, index) =>
+            dot.addEventListener('click', () => showSlide(index), { passive: true })
+          );
+          setInterval(() => showSlide(currentSlide + 1), 5000);
+        }
+
+        // Scroll Animations with Intersection Observer
+        if ('IntersectionObserver' in window) {
+          const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+          };
+
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('animated');
+                observer.unobserve(entry.target);
+              }
+            });
+          }, observerOptions);
+
+          const animatableElements = document.querySelectorAll('.brand-card, .franchise-grid, .express-card, .village-grid, .express-soon-card, .footer-col, .brands-title, .franchise-title, .express-title, .village-title, .express-soon-title');
+          animatableElements.forEach(el => observer.observe(el));
+        }
+      });
+    </script>
+  </body>
+</html>

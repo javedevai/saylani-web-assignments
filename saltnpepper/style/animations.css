@@ -1,0 +1,302 @@
+/* Keyframe Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header Animation */
+.header {
+  animation: slideDown 0.6s ease-out;
+}
+
+/* Hero Carousel */
+.carousel-item {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.carousel-item img {
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover img {
+  transform: scale(1.02);
+}
+
+/* Scroll Animation Classes */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Brand Cards */
+.brand-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out, box-shadow 0.3s ease;
+  will-change: opacity, transform;
+}
+
+.brand-card.animated {
+  opacity: 1;
+  transform: translateY(0);
+  will-change: auto;
+}
+
+.brand-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+}
+
+.brand-card:nth-child(1) { transition-delay: 0.1s; }
+.brand-card:nth-child(2) { transition-delay: 0.2s; }
+.brand-card:nth-child(3) { transition-delay: 0.3s; }
+.brand-card:nth-child(4) { transition-delay: 0.4s; }
+
+/* Franchise Cards */
+.franchise-grid {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.franchise-grid.animated {
+  opacity: 1;
+  transform: translateY(0);
+  will-change: auto;
+}
+
+.franchise-img img {
+  transition: transform 0.4s ease;
+}
+
+.franchise-grid:hover .franchise-img img {
+  transform: scale(1.05);
+}
+
+/* Express Cards */
+.express-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  will-change: opacity, transform;
+}
+
+.express-card.animated {
+  opacity: 1;
+  transform: translateY(0);
+  will-change: auto;
+}
+
+.express-card:hover {
+  transform: translateY(-8px);
+}
+
+.express-card:nth-child(1) { transition-delay: 0.05s; }
+.express-card:nth-child(2) { transition-delay: 0.1s; }
+.express-card:nth-child(3) { transition-delay: 0.15s; }
+.express-card:nth-child(4) { transition-delay: 0.2s; }
+.express-card:nth-child(5) { transition-delay: 0.25s; }
+.express-card:nth-child(6) { transition-delay: 0.3s; }
+.express-card:nth-child(7) { transition-delay: 0.35s; }
+.express-card:nth-child(8) { transition-delay: 0.4s; }
+.express-card:nth-child(9) { transition-delay: 0.45s; }
+.express-card:nth-child(10) { transition-delay: 0.5s; }
+
+/* Village Section */
+.village-grid {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.village-grid.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Express Soon Cards */
+.express-soon-card {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.express-soon-card.animated {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.express-soon-card:hover {
+  transform: scale(1.05);
+}
+
+.express-soon-card:nth-child(1) { transition-delay: 0.1s; }
+.express-soon-card:nth-child(2) { transition-delay: 0.15s; }
+.express-soon-card:nth-child(3) { transition-delay: 0.2s; }
+.express-soon-card:nth-child(4) { transition-delay: 0.25s; }
+.express-soon-card:nth-child(5) { transition-delay: 0.3s; }
+.express-soon-card:nth-child(6) { transition-delay: 0.35s; }
+
+/* Buttons */
+.brand-btn, .direction-btn, .direction-btn-green, .franchise-btn, .order-btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.brand-btn:hover, .direction-btn:hover, .direction-btn-green:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.franchise-btn:hover, .order-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Section Titles */
+.brands-title, .franchise-title, .express-title, .village-title, .express-soon-title {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.brands-title.animated, .franchise-title.animated, .express-title.animated, 
+.village-title.animated, .express-soon-title.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer Animation */
+.footer-col {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.footer-col.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer-col:nth-child(1) { transition-delay: 0.1s; }
+.footer-col:nth-child(2) { transition-delay: 0.2s; }
+.footer-col:nth-child(3) { transition-delay: 0.3s; }
+.footer-col:nth-child(4) { transition-delay: 0.4s; }
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.brand-card, .express-card, .express-soon-card {
+  contain: layout style paint;
+}
+
+.franchise-grid, .village-grid {
+  contain: layout style;
+}
+
+img {
+  content-visibility: auto;
+}
+
+/* Smooth Scroll Snap (Optional) */
+@media (min-width: 768px) {
+  main {
+    scroll-snap-type: y proximity;
+  }
+  
+  section {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
