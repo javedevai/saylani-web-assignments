@@ -51,9 +51,9 @@
         </button>
         <nav class="nav flex align-items-center" aria-label="Main navigation">
           <a href="#" class="nav-link text-none">Home</a>
-          <a href="#" class="nav-link text-none">About Us</a>
-          <a href="#" class="nav-link text-none">Publications</a>
-          <button class="franchise-btn">Get a Franchise</button>
+          <a href="pages/about.html" class="nav-link text-none">About Us</a>
+          <a href="pages/publications.html" class="nav-link text-none">Publications</a>
+          <a href="pages/franchise.html" class="franchise-btn text-none">Get a Franchise</a>
           <button class="order-btn flex align-items-center">
             Order Online
             <span
@@ -946,8 +946,8 @@
         // Scroll Animations with Intersection Observer
         if ('IntersectionObserver' in window) {
           const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            threshold: 0.15,
+            rootMargin: '0px 0px -80px 0px'
           };
 
           const observer = new IntersectionObserver((entries) => {
