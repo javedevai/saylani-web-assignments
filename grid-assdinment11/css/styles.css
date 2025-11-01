@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+section {
+  height: 100vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+[class^="grid"] {
+  display: grid;
+  gap: 10px;
+  flex: 1;
+}
+
+[class^="grid"] div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* 1. Basic Grid */
+.grid1 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.grid1 div:nth-child(1) { background: #e74c3c; }
+.grid1 div:nth-child(2) { background: #3498db; }
+.grid1 div:nth-child(3) { background: #2ecc71; }
+.grid1 div:nth-child(4) { background: #f39c12; }
+.grid1 div:nth-child(5) { background: #9b59b6; }
+.grid1 div:nth-child(6) { background: #1abc9c; }
+
+/* 2. Column Span */
+.grid2 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.grid2 div:nth-child(1) { background: #e74c3c; grid-column: span 2; }
+.grid2 div:nth-child(2) { background: #3498db; }
+.grid2 div:nth-child(3) { background: #2ecc71; }
+.grid2 div:nth-child(4) { background: #f39c12; }
+.grid2 div:nth-child(5) { background: #9b59b6; }
+
+/* 3. Row Span */
+.grid3 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.grid3 div:nth-child(1) { background: #e74c3c; grid-row: span 2; }
+.grid3 div:nth-child(2) { background: #3498db; }
+.grid3 div:nth-child(3) { background: #2ecc71; }
+.grid3 div:nth-child(4) { background: #f39c12; }
+.grid3 div:nth-child(5) { background: #9b59b6; }
+
+/* 4. Complex Spans */
+.grid4 {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.grid4 div:nth-child(1) { background: #e74c3c; grid-column: span 2; }
+.grid4 div:nth-child(2) { background: #3498db; grid-column: span 2; }
+.grid4 div:nth-child(3) { background: #2ecc71; grid-row: span 2; }
+.grid4 div:nth-child(4) { background: #f39c12; grid-column: span 2; }
+.grid4 div:nth-child(5) { background: #9b59b6; grid-row: span 2; }
+.grid4 div:nth-child(6) { background: #1abc9c; }
+.grid4 div:nth-child(7) { background: #e67e22; }
+
+/* 5. Asymmetric */
+.grid5 {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.grid5 div:nth-child(1) { background: #e74c3c; grid-column: span 3; }
+.grid5 div:nth-child(2) { background: #3498db; }
+.grid5 div:nth-child(3) { background: #2ecc71; }
+.grid5 div:nth-child(4) { background: #f39c12; grid-column: span 2; }
+.grid5 div:nth-child(5) { background: #9b59b6; }
+
+/* 6. Large Item */
+.grid6 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.grid6 div:nth-child(1) { background: #e74c3c; grid-column: span 2; grid-row: span 2; }
+.grid6 div:nth-child(2) { background: #3498db; }
+.grid6 div:nth-child(3) { background: #2ecc71; }
+.grid6 div:nth-child(4) { background: #f39c12; }
+.grid6 div:nth-child(5) { background: #9b59b6; }
+
+/* 7. Mixed Layout */
+.grid7 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.grid7 div:nth-child(1) { background: #e74c3c; grid-column: span 2; }
+.grid7 div:nth-child(2) { background: #3498db; grid-row: span 2; }
+.grid7 div:nth-child(3) { background: #2ecc71; }
+.grid7 div:nth-child(4) { background: #f39c12; }
+.grid7 div:nth-child(5) { background: #9b59b6; }
+.grid7 div:nth-child(6) { background: #1abc9c; }
+
+/* 8. Sidebar Layout */
+.grid8 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.grid8 div:nth-child(1) { background: #e74c3c; grid-row: span 3; }
+.grid8 div:nth-child(2) { background: #3498db; grid-column: span 2; }
+.grid8 div:nth-child(3) { background: #2ecc71; }
+.grid8 div:nth-child(4) { background: #f39c12; }
+.grid8 div:nth-child(5) { background: #9b59b6; grid-column: span 2; }
+
+/* 9. Full Complex */
+.grid9 {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.grid9 div:nth-child(1) { background: #e74c3c; grid-column: span 2; grid-row: span 2; }
+.grid9 div:nth-child(2) { background: #3498db; }
+.grid9 div:nth-child(3) { background: #2ecc71; }
+.grid9 div:nth-child(4) { background: #f39c12; }
+.grid9 div:nth-child(5) { background: #9b59b6; }
+.grid9 div:nth-child(6) { background: #1abc9c; grid-column: span 2; }
+.grid9 div:nth-child(7) { background: #e67e22; }
+.grid9 div:nth-child(8) { background: #34495e; }
