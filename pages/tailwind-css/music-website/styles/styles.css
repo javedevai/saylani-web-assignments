@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 62.5%;
+}
+.top{
+    background-color: #270082;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.tunes{
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 1.5rem;
+}
+.tunes>h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 650;
+    margin-left: 8rem;
+}
+.remains{
+    display: flex;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.remains>h3{
+    padding: 2rem;
+    margin-right: 5rem ;
+}
+.upper-content{
+    background-image: url(images/hero_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    color: white;
+}
+.upper-content>h1{
+    font-size: 15rem;
+    text-align: center;
+    padding-top: 35rem;
+}
+.upper-content>h3{
+    font-size: 5rem;
+    text-align: center;
+    padding: 5rem;
+}
+.upper-content>p{
+    font-size: 3rem;
+    text-align: center;
+    padding: 3rem;
+    padding-bottom: 30rem;
+}
+.purple-box>h2{
+    font-size: 8rem;
+    text-align: center;
+    padding-top: 10rem;
+    color: white;
+}
+.purple-box{
+    background-color: #281154;
+    color: white;
+    padding-bottom: 50rem;
+}
+.purple-box>h3{
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.purple-box>p{
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 8rem;
+}
+.purple-box>center>button{
+    background-color: red;
+    padding: 1.5rem;
+    color: white;
+    font-size: 2.5rem;
+    display: flex;   
+}
+.purple-box>h6{
+    font-size: 2rem;
+    text-align: center;
+    padding: 5rem;
+    font-weight: 100;
+}
+.purple-box>center>button:hover{
+    background-color: black;
+    transition: 0.5s;
+    font-size: 3rem;
+}
+.white-box{
+    background-color: #f9f6ff;
+}
+.white-box>h3{
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-top: -30rem;
+    
+}
+.white-box>p{
+    font-size: 3rem;
+    text-align: center;
+    padding: 5rem;
+}
+.white-box>center>button{
+    background-color: #281154;
+    padding: 1rem;
+    color: white;
+    font-size: 2rem;
+}
+.white-box>center>img{
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+.image-centre{
+    position: relative;
+    bottom: 40rem;
+}
+.third-last-content{
+    background-image: url(images/video.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.third-last-content>h3{
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 30rem;
+}
+.third-last-content>p{
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 25rem;
+}
+.text>h2{
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding: 3rem;
+    
+}
+.text>p{
+    font-size: 2rem;
+    text-align: center;
+    width: 50rem;
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+.text>center>button{
+    background-color: #281154;
+    padding: 1rem;
+    color: white;
+    font-size: 2rem;
+}
+.text>h6{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding: 3rem;
+    
+}
+li{
+    font-size: 2rem;
+    list-style: none;
+}
+ul{
+    padding-top: 2rem;
+}
+.footer-links>h4{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #281154;
+    color: #ffff;
+    padding: 8rem;
+}
+.end{
+    background-color: #270082;
+    padding: 2rem;
+}
+.end>p{
+    font-size: 2rem;
+    color: #ffff;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+@media(max-width:1035px){
+    html{
+        font-size: 50%;
+    }
+    .image-centre{
+        width: 80rem;
+    }
+    .white-box>center>img{
+        width: 80rem;
+    }
+    .image-card>img{
+        width: 40rem;
+        padding-top: 5rem;
+    }
+}
+@media(max-width:745px){
+    html{
+        font-size: 35%;
+    }
+    .image-centre{
+        width: 80rem;
+    }
+    .white-box>center>img{
+        width: 80rem;
+    }
+    .image-card>img{
+        width: 40rem;
+        padding-top: 5rem;
+    }
+}
+@media(max-width:533px){
+    html{
+        font-size: 25%;
+    }
+    .image-centre{
+        width: 60rem;
+    }
+    .white-box>center>img{
+        width: 60rem;
+    }
+    .image-card>img{
+        width: 30rem;
+        padding-top: 10rem;
+    }
+}
+@media(max-width:377px){
+    html{
+        font-size: 20%;
+    }
+    .image-centre{
+        width: 60rem;
+    }
+    .white-box>center>img{
+        width: 60rem;
+    }
+    .image-card>img{
+        width: 30rem;
+        padding-top: 10rem;
+    }
+}
